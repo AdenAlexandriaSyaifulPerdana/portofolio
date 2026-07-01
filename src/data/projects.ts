@@ -86,6 +86,7 @@ export const projects: Project[] = [
       "/projects/purepond/1.png",
       "/projects/purepond/2.png",
       "/projects/purepond/3.png",
+      "/projects/purepond/4.png",
     ],
     github: "",
     demo: "",
