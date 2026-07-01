@@ -7,8 +7,8 @@ import { featuredProjects, otherProjects } from "../data/projects";
 import { experiences } from "../data/experiences";
 
 const roles = [
-  "Junior Web Developer",
-  "Junior Mobile Developer",
+  "Web Developer Enthusiast",
+  "Mobile Developer Enthusiast",
   "Database Integration Learner",
   "Networking Background",
 ];
@@ -107,7 +107,7 @@ export default function Home() {
             : "bg-slate-950/80"
         }`}
       >
-        <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+        <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6">
           <a href="#home" className="text-lg font-bold tracking-wide text-white">
             Aden<span className="text-cyan-400">.</span>
           </a>
@@ -148,7 +148,7 @@ export default function Home() {
         </nav>
 
         {mobileMenuOpen && (
-          <div className="border-t border-white/10 bg-slate-950 px-6 py-4 md:hidden">
+          <div className="border-t border-white/10 bg-slate-950 px-4 py-4 sm:px-6 md:hidden">
             <div className="flex flex-col gap-4 text-sm text-slate-300">
               <a onClick={closeMobileMenu} href="#about">
                 About
@@ -173,12 +173,12 @@ export default function Home() {
       {/* Hero */}
       <section
         id="home"
-        className="relative flex min-h-screen items-center overflow-hidden px-6 pt-24"
+        className="relative flex min-h-screen items-center overflow-hidden px-4 pt-24 sm:px-6"
       >
         <div className="absolute left-1/2 top-1/4 h-72 w-72 -translate-x-1/2 rounded-full bg-cyan-500/20 blur-3xl" />
         <div className="absolute bottom-20 right-20 h-64 w-64 rounded-full bg-purple-500/20 blur-3xl" />
 
-        <div className="relative mx-auto grid max-w-6xl items-center gap-12 md:grid-cols-2">
+        <div className="relative mx-auto grid w-full max-w-6xl grid-cols-1 items-center gap-12 md:grid-cols-2">
           <div
             data-reveal
             className="translate-y-8 opacity-0 transition-all duration-700"
@@ -187,7 +187,7 @@ export default function Home() {
               Portfolio
             </p>
 
-            <h1 className="text-4xl font-bold leading-tight text-white md:text-6xl">
+            <h1 className="text-4xl font-bold leading-tight text-white sm:text-5xl md:text-6xl">
               Hi, I&apos;m Aden Alexandria
             </h1>
 
@@ -223,16 +223,16 @@ export default function Home() {
             data-reveal
             className="flex translate-y-8 justify-center opacity-0 transition-all delay-100 duration-700 md:justify-end"
           >
-            <div className="relative h-72 w-72 rounded-full border border-cyan-400/30 bg-slate-900 p-4 shadow-2xl shadow-cyan-500/10 md:h-96 md:w-96">
+            <div className="relative h-72 w-72 max-w-full rounded-full border border-cyan-400/30 bg-slate-900 p-4 shadow-2xl shadow-cyan-500/10 sm:h-80 sm:w-80 md:h-96 md:w-96">
               <div className="h-full w-full overflow-hidden rounded-full bg-slate-800">
                 <img
-                  src="/profile.png"
+                  src="/profile.jpg"
                   alt="Aden Alexandria"
                   className="h-full w-full object-cover"
                 />
               </div>
 
-              <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 rounded-full border border-cyan-400/40 bg-slate-950 px-5 py-2 text-sm font-medium text-cyan-300 shadow-lg shadow-cyan-500/10">
+              <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full border border-cyan-400/40 bg-slate-950 px-5 py-2 text-sm font-medium text-cyan-300 shadow-lg shadow-cyan-500/10">
                 Web & Mobile Developer
               </div>
             </div>
@@ -241,7 +241,7 @@ export default function Home() {
       </section>
 
       {/* About */}
-      <section id="about" className="mx-auto max-w-6xl px-6 py-24">
+      <section id="about" className="mx-auto w-full max-w-6xl px-4 py-24 sm:px-6">
         <div
           data-reveal
           className="translate-y-8 opacity-0 transition-all duration-700"
@@ -262,7 +262,7 @@ export default function Home() {
             understand both software and infrastructure fundamentals.
           </p>
 
-          <div className="mt-10 grid gap-5 md:grid-cols-3">
+          <div className="mt-10 grid grid-cols-1 gap-5 md:grid-cols-3">
             <div className="rounded-2xl border border-white/10 bg-slate-900 p-6">
               <p className="text-3xl font-bold text-cyan-400">Web</p>
               <p className="mt-3 text-sm leading-6 text-slate-400">
@@ -291,8 +291,8 @@ export default function Home() {
       </section>
 
       {/* Skills */}
-      <section id="skills" className="bg-slate-900/50 px-6 py-24">
-        <div className="mx-auto max-w-6xl">
+      <section id="skills" className="bg-slate-900/50 px-4 py-24 sm:px-6">
+        <div className="mx-auto w-full max-w-6xl">
           <div
             data-reveal
             className="translate-y-8 opacity-0 transition-all duration-700"
@@ -305,7 +305,7 @@ export default function Home() {
             </h2>
           </div>
 
-          <div className="mt-10 grid gap-5 md:grid-cols-4">
+          <div className="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {skills.map((skill) => (
               <div
                 key={skill.title}
@@ -322,8 +322,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Featured Projects */}
-      <section id="projects" className="mx-auto max-w-6xl px-6 py-24">
+      {/* Projects */}
+      <section id="projects" className="mx-auto w-full max-w-6xl px-4 py-24 sm:px-6">
         <div
           data-reveal
           className="translate-y-8 opacity-0 transition-all duration-700"
@@ -341,17 +341,17 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="mt-10 grid gap-6 md:grid-cols-3">
+        <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {featuredProjects.map((project) => (
             <article
               key={project.slug}
               data-reveal
-              className="group translate-y-8 rounded-2xl border border-white/10 bg-slate-900 p-5 opacity-0 transition-all duration-700 hover:-translate-y-2 hover:border-cyan-400/60"
+              className="group w-full max-w-full translate-y-8 rounded-2xl border border-white/10 bg-slate-900 p-5 opacity-0 transition-all duration-700 hover:-translate-y-2 hover:border-cyan-400/60"
             >
               <ProjectImageSlider
                 title={project.title}
                 images={project.images}
-                className="mb-5 h-40 rounded-xl"
+                className="mb-5 aspect-video w-full rounded-xl"
               />
 
               <div className="mb-4 flex flex-wrap gap-2">
@@ -393,17 +393,17 @@ export default function Home() {
               </h2>
             </div>
 
-            <div className="mt-10 grid gap-6 md:grid-cols-2">
+            <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2">
               {otherProjects.map((project) => (
                 <article
                   key={project.slug}
                   data-reveal
-                  className="group translate-y-8 rounded-2xl border border-white/10 bg-slate-900 p-5 opacity-0 transition-all duration-700 hover:-translate-y-2 hover:border-cyan-400/60"
+                  className="group w-full max-w-full translate-y-8 rounded-2xl border border-white/10 bg-slate-900 p-5 opacity-0 transition-all duration-700 hover:-translate-y-2 hover:border-cyan-400/60"
                 >
                   <ProjectImageSlider
                     title={project.title}
                     images={project.images}
-                    className="mx-auto mb-5 h-[180px] w-[320px] max-w-full rounded-xl"
+                    className="mb-5 aspect-video w-full rounded-xl"
                   />
 
                   <div className="mb-4 flex flex-wrap gap-2">
@@ -435,8 +435,8 @@ export default function Home() {
       </section>
 
       {/* Experience */}
-      <section id="experience" className="bg-slate-900/50 px-6 py-24">
-        <div className="mx-auto max-w-6xl">
+      <section id="experience" className="bg-slate-900/50 px-4 py-24 sm:px-6">
+        <div className="mx-auto w-full max-w-6xl">
           <div
             data-reveal
             className="translate-y-8 opacity-0 transition-all duration-700"
@@ -453,18 +453,18 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="mt-10 grid gap-6 md:grid-cols-2">
+          <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2">
             {experiences.map((item) => (
               <article
                 key={`${item.title}-${item.organization}`}
                 data-reveal
-                className="group translate-y-8 overflow-hidden rounded-2xl border border-white/10 bg-slate-950 opacity-0 transition-all duration-700 hover:-translate-y-2 hover:border-cyan-400/60"
+                className="group w-full max-w-full translate-y-8 overflow-hidden rounded-2xl border border-white/10 bg-slate-950 opacity-0 transition-all duration-700 hover:-translate-y-2 hover:border-cyan-400/60"
               >
-                <div className="mx-auto h-[300px] w-[520px] max-w-full overflow-hidden bg-slate-800">
+                <div className="aspect-[5/3] w-full overflow-hidden bg-slate-800">
                   <img
                     src={item.image}
                     alt={item.title}
-                    className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                    className="h-full w-full object-contain p-2 transition duration-500 group-hover:scale-105"
                   />
                 </div>
 
@@ -475,9 +475,7 @@ export default function Home() {
                     </span>
                   </div>
 
-                  <h3 className="text-xl font-bold text-white">
-                    {item.title}
-                  </h3>
+                  <h3 className="text-xl font-bold text-white">{item.title}</h3>
 
                   <p className="mt-1 text-sm text-slate-500">
                     {item.organization}
@@ -494,7 +492,7 @@ export default function Home() {
       </section>
 
       {/* Contact */}
-      <section id="contact" className="mx-auto max-w-6xl px-6 py-24">
+      <section id="contact" className="mx-auto w-full max-w-6xl px-4 py-24 sm:px-6">
         <div
           data-reveal
           className="translate-y-8 opacity-0 transition-all duration-700"
@@ -513,7 +511,7 @@ export default function Home() {
 
           <div className="mt-8 flex flex-wrap gap-4">
             <a
-              href="mailto:adenperdana1477@gmail.com"
+              href="mailto:242410102033@mail.unej.ac.id"
               className="rounded-full bg-cyan-400 px-6 py-3 font-semibold text-slate-950 transition hover:-translate-y-1 hover:bg-cyan-300"
             >
               Email Me
@@ -529,9 +527,7 @@ export default function Home() {
             </a>
 
             <a
-              href="https://www.linkedin.com/in/adenalexandria/"
-              target="_blank"
-              rel="noreferrer"
+              href="#"
               className="rounded-full border border-white/20 px-6 py-3 font-semibold text-white transition hover:-translate-y-1 hover:border-cyan-400 hover:text-cyan-300"
             >
               LinkedIn

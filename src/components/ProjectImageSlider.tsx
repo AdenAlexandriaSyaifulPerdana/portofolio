@@ -71,11 +71,11 @@ export default function ProjectImageSlider({
         }}
       >
         {availableImages.map((image, index) => (
-          <div key={image} className="h-full min-w-full">
+          <div key={image} className="flex h-full min-w-full items-center justify-center">
             <img
               src={image}
               alt={`${title} screenshot ${index + 1}`}
-              className="h-full w-full object-cover"
+              className="h-full w-full object-contain p-2"
               onError={() => handleImageError(image)}
             />
           </div>
