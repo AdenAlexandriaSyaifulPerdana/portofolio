@@ -213,7 +213,8 @@ export const projects: Project[] = [
     ],
     images: [
       "/projects/bus-connect/1.png",
-      "/projects/bus-connect/2.png"
+      "/projects/bus-connect/2.png",
+      "/projects/bus-connect/3.png"
     ],
     github: "",
     demo: "",
