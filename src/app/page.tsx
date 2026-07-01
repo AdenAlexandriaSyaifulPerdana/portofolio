@@ -7,8 +7,8 @@ import { featuredProjects, otherProjects } from "../data/projects";
 import { experiences } from "../data/experiences";
 
 const roles = [
-  "Web Developer Enthusiast",
-  "Mobile Developer Enthusiast",
+  "Junior Web Developer",
+  "Junior Mobile Developer",
   "Database Integration Learner",
   "Networking Background",
 ];
