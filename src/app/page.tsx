@@ -226,7 +226,7 @@ export default function Home() {
             <div className="relative h-72 w-72 max-w-full rounded-full border border-cyan-400/30 bg-slate-900 p-4 shadow-2xl shadow-cyan-500/10 sm:h-80 sm:w-80 md:h-96 md:w-96">
               <div className="h-full w-full overflow-hidden rounded-full bg-slate-800">
                 <img
-                  src="/profile.jpg"
+                  src="/profile.png"
                   alt="Aden Alexandria"
                   className="h-full w-full object-cover"
                 />
