@@ -210,7 +210,10 @@ export const projects: Project[] = [
       "E-ticket generation",
       "CSV-based data storage",
     ],
-    images: ["/projects/bus-connect/1.png", "/projects/bus-connect/2.png"],
+    images: [
+      "/projects/bus-connect/1.png",
+      "/projects/bus-connect/2.png"
+    ],
     github: "",
     demo: "",
     featured: false,

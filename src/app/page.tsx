@@ -511,7 +511,7 @@ export default function Home() {
 
           <div className="mt-8 flex flex-wrap gap-4">
             <a
-              href="mailto:242410102033@mail.unej.ac.id"
+              href="mailto:adenperdana1477@gmail.com"
               className="rounded-full bg-cyan-400 px-6 py-3 font-semibold text-slate-950 transition hover:-translate-y-1 hover:bg-cyan-300"
             >
               Email Me
