@@ -351,7 +351,7 @@ export default function Home() {
               <ProjectImageSlider
                 title={project.title}
                 images={project.images}
-                className="mx-auto mb-5 h-[180px] w-[320px] max-w-full rounded-xl"
+                className="mb-5 h-40 rounded-xl"
               />
 
               <div className="mb-4 flex flex-wrap gap-2">
