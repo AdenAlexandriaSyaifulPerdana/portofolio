@@ -7,8 +7,8 @@ import { featuredProjects, otherProjects } from "../data/projects";
 import { experiences } from "../data/experiences";
 
 const roles = [
-  "Web Developer Enthusiast",
-  "Mobile Developer Enthusiast",
+  "Junior Web Developer",
+  "Junior Mobile Developer",
   "Database Integration Learner",
   "Networking Background",
 ];
@@ -226,7 +226,7 @@ export default function Home() {
             <div className="relative h-72 w-72 rounded-full border border-cyan-400/30 bg-slate-900 p-4 shadow-2xl shadow-cyan-500/10 md:h-96 md:w-96">
               <div className="h-full w-full overflow-hidden rounded-full bg-slate-800">
                 <img
-                  src="/profile.jpg"
+                  src="/profile.png"
                   alt="Aden Alexandria"
                   className="h-full w-full object-cover"
                 />
@@ -351,7 +351,7 @@ export default function Home() {
               <ProjectImageSlider
                 title={project.title}
                 images={project.images}
-                className="mb-5 h-40 rounded-xl"
+                className="mx-auto mb-5 h-[180px] w-[320px] max-w-full rounded-xl"
               />
 
               <div className="mb-4 flex flex-wrap gap-2">
@@ -403,7 +403,7 @@ export default function Home() {
                   <ProjectImageSlider
                     title={project.title}
                     images={project.images}
-                    className="mb-5 h-40 rounded-xl"
+                    className="mx-auto mb-5 h-[180px] w-[320px] max-w-full rounded-xl"
                   />
 
                   <div className="mb-4 flex flex-wrap gap-2">
@@ -460,7 +460,7 @@ export default function Home() {
                 data-reveal
                 className="group translate-y-8 overflow-hidden rounded-2xl border border-white/10 bg-slate-950 opacity-0 transition-all duration-700 hover:-translate-y-2 hover:border-cyan-400/60"
               >
-                <div className="h-52 overflow-hidden bg-slate-800">
+                <div className="mx-auto h-[300px] w-[520px] max-w-full overflow-hidden bg-slate-800">
                   <img
                     src={item.image}
                     alt={item.title}

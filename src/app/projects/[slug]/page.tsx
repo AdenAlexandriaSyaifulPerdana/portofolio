@@ -118,11 +118,11 @@ export default async function ProjectDetailPage({
               </div>
             </div>
 
-            <div className="rounded-3xl border border-white/10 bg-slate-900 p-4 shadow-2xl shadow-cyan-500/10">
+            <div className="mx-auto w-[560px] max-w-full rounded-3xl border border-white/10 bg-slate-900 p-4 shadow-2xl shadow-cyan-500/10">
               <ProjectImageSlider
                 title={project.title}
                 images={project.images}
-                className="h-80 w-full rounded-2xl"
+                className="mx-auto h-[320px] w-[520px] max-w-full rounded-2xl"
                 showDots
               />
             </div>
