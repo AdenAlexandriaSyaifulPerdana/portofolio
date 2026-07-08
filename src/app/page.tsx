@@ -545,8 +545,7 @@ export default function Home() {
       </section>
 
       <footer className="border-t border-white/10 px-6 py-8 text-center text-sm text-slate-500">
-        © {new Date().getFullYear()} Aden Alexandria. Built with Next.js &
-        Tailwind CSS.
+        © {new Date().getFullYear()} Aden Alexandria Syaiful Perdana. All rights reserved.
       </footer>
     </main>
   );
