@@ -49,7 +49,7 @@ export const projects: Project[] = [
       "/projects/select/2.png",
       "/projects/select/3.png",
     ],
-    github: "",
+    github: "https://github.com/AdenAlexandriaSyaifulPerdana/select",
     demo: "",
     featured: true,
   },
@@ -88,7 +88,7 @@ export const projects: Project[] = [
       "/projects/purepond/3.png",
       "/projects/purepond/4.png",
     ],
-    github: "",
+    github: "https://github.com/AdenAlexandriaSyaifulPerdana/purepond",
     demo: "",
     featured: true,
   },
@@ -188,7 +188,7 @@ export const projects: Project[] = [
     ],
     github:
       "https://github.com/AdenAlexandriaSyaifulPerdana/latah-frontend-new",
-    demo: "",
+    demo: "https://latah-web.vercel.app/",
     featured: true,
   },
   {
@@ -248,6 +248,7 @@ export const projects: Project[] = [
     images: [
       "/projects/network-simulation/1.png",
       "/projects/network-simulation/2.png",
+      "/projects/network-simulation/3.png",
     ],
     github: "",
     demo: "",
